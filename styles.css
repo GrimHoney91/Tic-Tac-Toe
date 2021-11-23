@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&family=Staatliches&display=swap');
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    font-family: 'Staatliches', cursive;
+}
+body {
+    width: 100%;
+    height: 78%;
+    background-color: dodgerblue;
+}
+header {
+    width: 100%;
+    height: 16%;
+    text-align: center;
+}
+h1 {
+    font-size: 8rem;
+    color: white;
+    display: block;
+    margin: auto;
+}
+main {
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+#grid-container {
+    width: 40rem;
+    height: 40rem;
+    display: none;
+    margin: auto;
+    background-color: white;
+}
+#grid {
+    width: 100%;
+    height: 100%;
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "1 2 3"
+    "4 5 6"
+    "7 8 9";
+    gap: 1rem 1rem;
+}
+.grid-cells {
+    width: 100%;
+    height: 100%;
+    background-color: dodgerblue;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+    font-size: 10rem;
+    color: yellow;
+}
+.endGame {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    box-shadow: 0rem 0rem .5rem 0.5rem white;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+#messageBlock {
+    height: 30%;
+    display: grid;
+}
+#message {
+    font-size: 5rem;
+    font-family: 'Staatliches';
+    color: yellow;
+    display: block;
+    margin: auto;
+}
+#restartBtnBlock {
+    height: 70%;
+    display: grid;
+}
+#restartBtn {
+    background-color: yellow;
+    border: none;
+    color: black;
+    font-size: 3.5rem;
+    font-family: 'Staatliches';
+    width: 20rem;
+    height: 8rem;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+#start {
+    display: block;
+    margin: auto;
+    background-color: white;
+    color: dodgerblue;
+    border: none;
+    font-size: 4rem;
+    width: 24rem;
+    height: 10rem;
+    cursor: pointer;
+    font-family: 'Staatliches', cursive;
+    transition: all 0.03s ease-in-out;
+}
+button:hover {
+    transform: scale(1.15);
+}
+button:focus {
+    transform: scale(0.8);
+}
+footer {
+    width: 100%;
+    height: 6rem;
+    display: grid;
+}
+h3 {
+    font-size: 2.5rem;
+    color: white;
+    display: block;
+    margin: auto;
+}
